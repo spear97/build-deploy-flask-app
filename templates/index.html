@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Include Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Include custom JavaScript file -->
     <script src="./static/mywebscript.js"></script>
+    
+    <!-- Define custom CSS styles -->
     <style>
         .center-heading {
             text-align: center;
@@ -11,29 +16,38 @@
 
 </head>
 <body>
+    <!-- Bootstrap card element for styling -->
     <div class="card">
-	<h1 class="center-heading">Basic Mathematical Application</h1> 
+        <!-- Main Heading -->
+        <h1 class="center-heading">Basic Mathematical Application</h1> 
         <div style="padding: 25px 25px 25px 25px;">
-        <div class="card-body">
-            <div class="mb-3">
-                <label class="form-label">Number 1</label>
-                <input type="number" class="form-control" id="num1">
-            </div>
+            <div class="card-body">
+                <!-- Input for Number 1 -->
+                <div class="mb-3">
+                    <label class="form-label">Number 1</label>
+                    <input type="number" class="form-control" id="num1">
+                </div>
     
-            <div class="mb-3">
-                <label class="form-label">Number 2</label>
-                <input type="number" class="form-control" id="num2">
-            </div>
+                <!-- Input for Number 2 -->
+                <div class="mb-3">
+                    <label class="form-label">Number 2</label>
+                    <input type="number" class="form-control" id="num2">
+                </div>
     
-            <div style="padding: 25px;">
-                <button onclick="runAddition()" class="btn btn-secondary">Add</button>
-                <button onclick="runSubtraction()" class="btn btn-secondary">Subtract</button>
-                <button onclick="runMultiplication()" class="btn btn-secondary">Multiply</button>
-            </div>
-	<h1 class="center-heading">Response from server</h1> 
-            <div style="padding: 25px 25px 25px 25px;">
+                <!-- Buttons for operations -->
+                <div style="padding: 25px;">
+                    <button onclick="runAddition()" class="btn btn-secondary">Add</button>
+                    <button onclick="runSubtraction()" class="btn btn-secondary">Subtract</button>
+                    <button onclick="runMultiplication()" class="btn btn-secondary">Multiply</button>
+                </div>
     
-            <div id="system_response" style="padding: 25px;"></div>
+                <!-- Heading for server response -->
+                <h1 class="center-heading">Response from server</h1> 
+                <div style="padding: 25px 25px 25px 25px;">
+                    <!-- Container for displaying server response -->
+                    <div id="system_response" style="padding: 25px;"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
