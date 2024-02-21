@@ -25,12 +25,12 @@ python app.py
 The server will start on http://0.0.0.0:8080/.
 
 ### Endpoints
--`/sum`: Endpoint for addition. Pass num1 and num2 as query parameters to get the sum.
+- `/sum`: Endpoint for addition. Pass num1 and num2 as query parameters to get the sum.
 Example: http://0.0.0.0:8080/sum?num1=5&num2=3 will return 8.
--`/sub`: Endpoint for subtraction. Pass num1 and num2 as query parameters to get the subtraction.
+- `/sub`: Endpoint for subtraction. Pass num1 and num2 as query parameters to get the subtraction.
 Example: http://0.0.0.0:8080/sub?num1=10&num2=4 will return 6.
--`/mul`: Endpoint for multiplication. Pass num1 and num2 as query parameters to get the multiplication.
--`/`: Main page to interact with the application. This page provides a simple UI to input numbers and perform operations.
+- `/mul`: Endpoint for multiplication. Pass num1 and num2 as query parameters to get the multiplication.
+- `/`: Main page to interact with the application. This page provides a simple UI to input numbers and perform operations.
 
 ### Structure
 - `app.py`: Contains the Flask application code with the defined routes.
